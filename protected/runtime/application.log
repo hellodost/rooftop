@@ -1,0 +1,476 @@
+2022/02/23 15:27:08 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'parishad' in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\CDbConnection.php:399
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CModule.php(394): CDbConnection->init()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(458): CModule->getComponent('db')
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(2384): CActiveRecord->getDbConnection()
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(ContactUs))
+#7 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php(78): CActiveRecord->__construct()
+#9 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#10 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#14 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#15 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#16 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#17 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#18 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#19 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/contact
+HTTP_REFERER=http://localhost/shubhgathbandhan/
+---
+2022/02/23 15:42:37 [error] [php] Uninitialized string offset: 0 (D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CHttpRequest.php:478)
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CWebApplication->run()
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CWebApplication->__call()
+REQUEST_URI=/shubhgathbandhan/index.php
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php (26)
+in D:\XAMPP1\htdocs\shubhgathbandhan\index.php (12)
+2022/02/23 15:42:42 [error] [php] Uninitialized string offset: 0 (D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CHttpRequest.php:478)
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CWebApplication->run()
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CWebApplication->__call()
+REQUEST_URI=/shubhgathbandhan/index.php
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php (26)
+in D:\XAMPP1\htdocs\shubhgathbandhan\index.php (12)
+2022/02/23 15:43:25 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "serices". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('serices')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('serices')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/serices')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/serices
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 15:43:26 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "portfolio". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('portfolio')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('portfolio')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/portfolio')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/portfolio
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/serices
+---
+2022/02/23 15:43:28 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shubhgathbandhan.contact_us' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `contact_us`.
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php (78)
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php (26)
+in D:\XAMPP1\htdocs\shubhgathbandhan\index.php (12)
+2022/02/23 15:43:28 [error] [exception.CDbException] CDbException: The table "contact_us" for active record class "ContactUs" cannot be found in the database. in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(ContactUs))
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php(78): CActiveRecord->__construct()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#8 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#9 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#11 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#12 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#13 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/contact
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/portfolio
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/about/...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/about/list-1.png
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/about/...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/about/list-2.png
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/about/...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/about/list-3.png
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/team/t...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/team/team-1.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/team/t...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/team/team-2.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/about/...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/about/list-4.png
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/team/t...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/team/team-3.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/team/t...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/team/team-4.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/testim...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/testimonial/ta-2.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/testim...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/testimonial/ta-1.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/testim...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/testimonial/ta-4.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/testim...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/testimonial/ta-3.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/about/...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/about/about-pic.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:06:55 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/cta-bg...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/cta-bg.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:13:32 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/galler...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/gallery/gallery-15.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/gallery
+---
+2022/02/23 16:18:17 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "serices". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('serices')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('serices')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/serices')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/serices
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/about
+---
+2022/02/23 16:18:22 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shubhgathbandhan.contact_us' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `contact_us`.
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php (78)
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php (26)
+in D:\XAMPP1\htdocs\shubhgathbandhan\index.php (12)
+2022/02/23 16:18:22 [error] [exception.CDbException] CDbException: The table "contact_us" for active record class "ContactUs" cannot be found in the database. in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(ContactUs))
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php(78): CActiveRecord->__construct()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#8 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#9 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#11 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#12 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#13 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/contact
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/gallery
+---
+2022/02/23 16:20:09 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "serices". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('serices')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('serices')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/serices')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/serices
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/gallery
+---
+2022/02/23 16:20:39 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "services". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('services')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('services')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/services')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/services
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/
+---
+2022/02/23 16:22:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-2.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:22:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-1.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:22:00 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-3.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:22:41 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shubhgathbandhan.contact_us' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `contact_us`.
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php (71)
+in D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php (26)
+in D:\XAMPP1\htdocs\shubhgathbandhan\index.php (12)
+2022/02/23 16:22:41 [error] [exception.CDbException] CDbException: The table "contact_us" for active record class "ContactUs" cannot be found in the database. in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php:2385
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(ContactUs))
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\db\ar\CActiveRecord.php(79): CActiveRecord->getMetaData()
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\protected\controllers\front\SiteController.php(71): CActiveRecord->__construct()
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\actions\CInlineAction.php(49): SiteController->actionContact()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('contact')
+#8 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contact')
+#9 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#10 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#11 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#12 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#13 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/contact
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:27:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-1.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:27:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-2.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 16:27:13 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "img". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('img')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('img')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/img/servic...')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/img/services/service-3.jpg
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/services
+---
+2022/02/23 19:01:15 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rain.mp4". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('rain.mp4')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('rain.mp4')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rain.mp4')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/rain.mp4
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/index
+---
+2022/02/23 19:02:12 [error] [exception.CHttpException.404] CHttpException: The system is unable to find the requested action "rain.mp4". in D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php:483
+Stack trace:
+#0 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CController.php(270): CController->missingAction('rain.mp4')
+#1 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(282): CController->run('rain.mp4')
+#2 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('site/rain.mp4')
+#3 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CApplication.php(184): CWebApplication->processRequest()
+#4 D:\XAMPP1\htdocs\shubhgathbandhan\protected\components\WebApplicationEndBehavior.php(26): CApplication->run()
+#5 D:\XAMPP1\htdocs\shubhgathbandhan\yii\framework\base\CComponent.php(261): WebApplicationEndBehavior->runEnd('front')
+#6 D:\XAMPP1\htdocs\shubhgathbandhan\index.php(12): CComponent->__call('runEnd', Array)
+#7 {main}
+REQUEST_URI=/shubhgathbandhan/index.php/site/rain.mp4
+HTTP_REFERER=http://localhost/shubhgathbandhan/index.php/site/index
+---

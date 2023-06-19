@@ -1,0 +1,89 @@
+/* CSS Document */
+/* Tables */
+table.items {
+	
+	clear:both;
+	font-size:13px;
+	padding:1px;
+	margin-bottom:10px;
+	border:1px solid #f0f0f0;
+	width:100%;
+}
+
+.grid-view-loading
+{
+	background:url('../images/ajax-loader.gif') no-repeat;
+	
+}
+.grid-view-loading .summary
+{
+	margin-left:20px;
+	
+	
+}
+.grid-view table.items th a.asc
+{
+	background:url(../images/up.png) right center no-repeat;
+	padding-right: 10px;
+}
+
+.grid-view table.items th a.desc
+{
+	background:url(../images/down.png) right center no-repeat;
+	padding-right: 10px;
+}
+table.items thead, table.items thead th {
+	height:28px;
+	text-transform:uppercase;
+	font-size:10px;
+}
+table.items thead td {
+	background:#FFF;
+	text-align:center;
+}
+table.items thead th a {
+	color:#FFFFFF;
+	text-decoration:none;
+	font-weight:normal;
+}
+table.items td {
+	padding:7px 9px;
+	margin:1px 0;
+}
+
+/*table.items {
+	 border:1px solid #f0f0f0;
+}*/
+
+table.items thead, table.items thead th {
+ background:#1c1c1c url('../images/rep1.png') 0 0 repeat-x;
+ color:#fff;
+}
+
+table.items thead tr{
+ color:#fff;
+}
+
+table.items tr {
+ color:#999;
+ cursor:pointer;
+}
+
+table.items tr.odd{
+ background:#f9f9f9;
+ color:#888;
+}
+
+table.items tr:hover {
+ color:#333;
+}
+
+table.items thead tr:hover, table.normal thead tr:hover {
+ color:#fff;
+}
+/* End of Tables */
+
+.email,.update,.delete,.view
+{margin-right:2px;
+	}
+
